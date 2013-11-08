@@ -9,7 +9,7 @@ distributionPlot_bimodal<-function(filename,inputScreenData){
   
   require(mixtools)
   png(filename)
-  Y<-Y0.vehicle<-InputScreenData
+  Y<-Y0.vehicle<-inputScreenData
   wait0.vehicle <- normalmixEM(as.numeric(Y), lambda = .5, mu = c(10,200), maxit=100000)
     
   plot(wait0.vehicle, which = 2,density = TRUE, cex.axis = 1.4, cex.lab = 1.4, cex.main = 1.8, main2 = "", xlab2 = "Percent Normalized Cell Viability")
