@@ -18,5 +18,7 @@ distributionPlot_bimodal<-function(filename,inputScreenData){
   
 }
 
+distributionPlot_bimodal(filename,inputScreenData1)
+
 # multi-variate analysis is needed implemented
 # two distribution is considered simultaneously to compute P-value to identify hits 
